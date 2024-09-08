@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeQuintet - Leading Technology Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom Animations */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        /* Color Palette: Black, White, and Yellow */
+        .bg-logo-yellow {
+            background-color: #FBBF24; /* Tailwind's yellow-500 */
+        }
+
+        .text-logo-yellow {
+            color: #FBBF24;
+        }
+
+        .text-logo-black {
+            color: #1F2937; /* Tailwind's gray-900, near black */
+        }
+
+        .bg-logo-black {
+            background-color: #080c10;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header Section -->
+    <header class="bg-logo-black text-white py-6">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="logo text-3xl font-bold flex items-center">
+                <img src="pics/logo.jpg" alt="CodeQuintet Logo" class="w-20 h-20 inline-block mr-2"> 
+                <span class="text-logo-yellow">CodeQuintet</span>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-lg font-semibold">
+                    <li><a href="#services" class="hover:text-gray-300">Services</a></li>
+                    <li><a href="#approach" class="hover:text-gray-300">Our Approach</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-logo-black text-white py-20 text-center fade-in">
+        <div class="container mx-auto">
+            <h1 class="text-5xl font-extrabold mb-6 leading-tight fade-in">Building the Future with <br><span class="text-logo-yellow">Innovative Digital Solutions</span></h1>
+            <p class="text-xl text-gray-300 mb-8 fade-in">We transform ideas into reality with powerful website and app development solutions.</p>
+            <a href="#services" class="bg-logo-yellow text-gray-900 py-3 px-8 rounded-full hover:bg-yellow-400 hover-scale font-bold text-lg">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- Business Description Section -->
+    <section id="business-description" class="py-20 container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 text-logo-black">About CodeQuintet</h2>
+        <p class="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto text-center">CodeQuintet is a leading technology solutions provider. We specialize in website and app development for businesses, helping them achieve digital transformation with innovative and custom solutions.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-logo-yellow text-gray-900 py-20 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-logo-black">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Service Item -->
+                <div class="bg-white text-gray-900 p-8 rounded-lg shadow-lg hover-scale hover:shadow-2xl transition duration-300">
+                    <h3 class="text-2xl font-bold mb-4 text-logo-black">Website Development</h3>
+                    <p class="text-gray-700">Responsive, captivating websites that elevate your brand and engage your audience.</p>
+                </div>
+                <!-- Service Item -->
+                <div class="bg-white text-gray-900 p-8 rounded-lg shadow-lg hover-scale hover:shadow-2xl transition duration-300">
+                    <h3 class="text-2xl font-bold mb-4 text-logo-black">App Development</h3>
+                    <p class="text-gray-700">Custom mobile and web apps that deliver exceptional user experiences.</p>
+                </div>
+                <!-- Service Item -->
+                <div class="bg-white text-gray-900 p-8 rounded-lg shadow-lg hover-scale hover:shadow-2xl transition duration-300">
+                    <h3 class="text-2xl font-bold mb-4 text-logo-black">SEO Optimization</h3>
+                    <p class="text-gray-700">Boost your site’s visibility and drive more traffic with effective SEO strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="py-20 container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-16 text-logo-black">Our Approach</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="bg-white p-8 shadow-lg rounded-lg hover-scale">
+                <h3 class="text-2xl font-bold mb-4 text-logo-black">Client-Centric</h3>
+                <p class="text-gray-700">We listen, adapt, and deliver solutions that fit your business needs perfectly.</p>
+            </div>
+            <div class="bg-white p-8 shadow-lg rounded-lg hover-scale">
+                <h3 class="text-2xl font-bold mb-4 text-logo-black">Innovative</h3>
+                <p class="text-gray-700">We stay ahead of trends and deliver cutting-edge technology solutions.</p>
+            </div>
+            <div class="bg-white p-8 shadow-lg rounded-lg hover-scale">
+                <h3 class="text-2xl font-bold mb-4 text-logo-black">Quality-Driven</h3>
+                <p class="text-gray-700">Our commitment to quality ensures scalable, reliable digital solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-logo-black text-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Build Your Digital Future?</h2>
+            <p class="text-lg mb-8">Contact us today to start a conversation about your next project!</p>
+            <a href="mailto:contact@codequintet.com" class="bg-logo-yellow text-gray-900 py-3 px-8 rounded-full hover:bg-yellow-400 hover-scale font-bold">Email Us</a>
+        </div>
+    </footer>
+</body>
+
+</html>
